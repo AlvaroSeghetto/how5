@@ -15,16 +15,31 @@ const listaProdutos = [
     { nome: "Ovos (12 unid)", preco: "12,00", img: "ovos.webp", categoria: "Alimentos" },
     { nome: "Presunto (kg)", preco: "25,90", img: "presunto.webp", categoria: "Alimentos" },
 
-    // Limpeza e Higiene
+    // Limpeza
     { nome: "Amaciante", preco: "15,90", img: "amaciante.webp", categoria: "Produtos Variados" },
     { nome: "Detergente", preco: "2,20", img: "detergente.jpg", categoria: "Produtos Variados" },
     { nome: "Lava Roupas", preco: "12,40", img: "lava_roupas.jpg", categoria: "Produtos Variados" },
-    { nome: "Papel Higiênico (12rl)", preco: "18,90", img: "papel-higienico.jpg", categoria: "Produtos Variados" },
-    { nome: "Sabonete", preco: "3,50", img: "sabonete.jpg", categoria: "Produtos Variados" },
+    
+    // Higiene
+    { nome: "Papel Higiênico (12rl)", preco: "18,90", img: "papel-higienico.jpg", categoria: "Higiene" },
+    { nome: "Sabonete", preco: "3,50", img: "sabonete.jpg", categoria: "Higiene" },
+    { nome: "Shampoo", preco: "14,90", img: "shampoo.webp", categoria: "Higiene" },
 
     // Bebidas
     { nome: "Cerveja Lata", preco: "4,50", img: "cerveja.webp", categoria: "Cervejas e Destilados" },
-    { nome: "Refrigerante 2L", preco: "9,90", img: "refri.webp", categoria: "Cervejas e Destilados" }
+    { nome: "Refrigerante 2L", preco: "9,90", img: "refri.webp", categoria: "Cervejas e Destilados" },
+
+    // Tabacaria
+    { nome: "Cigarro de Palha", preco: "15,00", img: "cigarro_palha.webp", categoria: "Tabacaria" },
+    { nome: "Tabaco", preco: "22,00", img: "tabaco.webp", categoria: "Tabacaria" },
+    { nome: "Piteira", preco: "5,00", img: "piteira.webp", categoria: "Tabacaria" },
+    { nome: "Seda", preco: "4,00", img: "seda.webp", categoria: "Tabacaria" },
+
+    // Doces (Novos itens)
+    { nome: "Marshmallows", preco: "7,50", img: "marshmallows.webp", categoria: "Doces" },
+    { nome: "Biscoito", preco: "3,80", img: "biscoito.webp", categoria: "Doces" },
+    { nome: "Gomas", preco: "4,50", img: "gomas.webp", categoria: "Doces" },
+    { nome: "Chocolate", preco: "6,90", img: "chocolate.jpg", categoria: "Doces" }
 ];
 
 let carrinho = [];
