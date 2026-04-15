@@ -1,12 +1,30 @@
 const listaProdutos = [
-    { nome: "Amaciante", preco: "15,90", img: "amaciante.webp", categoria: "Produtos Variados" },
-    { nome: "Amendoim", preco: "5,50", img: "amendoin.webp", categoria: "Alimentos" },
+    // Alimentos e Mercearia
     { nome: "Arroz 5kg", preco: "28,90", img: "arroz.webp", categoria: "Alimentos" },
-    { nome: "Cerveja Lata", preco: "4,50", img: "cerveja.webp", categoria: "Cervejas e Destilados" },
-    { nome: "Detergente", preco: "2,20", img: "detergente.jpg", categoria: "Produtos Variados" },
+    { nome: "Feijão Preto 1kg", preco: "8,50", img: "feijao.jpg", categoria: "Alimentos" },
+    { nome: "Macarrão Espaguete", preco: "4,20", img: "macarrao.webp", categoria: "Alimentos" },
+    { nome: "Óleo de Soja", preco: "7,30", img: "oleo.webp", categoria: "Alimentos" },
+    { nome: "Café Torrado", preco: "16,90", img: "cafe.webp", categoria: "Alimentos" },
+    { nome: "Açúcar Refinado", preco: "4,50", img: "acucar.jpg", categoria: "Alimentos" },
+    { nome: "Amendoim", preco: "5,50", img: "amendoin.webp", categoria: "Alimentos" },
+    { nome: "Leite Integral", preco: "5,20", img: "leite.jpg", categoria: "Alimentos" },
+
+    // Carnes e Frios
     { nome: "Frango (kg)", preco: "18,90", img: "frango.webp", categoria: "Carnes e Churrasco" },
+    { nome: "Carne Bovina (kg)", preco: "38,50", img: "carne.webp", categoria: "Carnes e Churrasco" },
+    { nome: "Ovos (12 unid)", preco: "12,00", img: "ovos.webp", categoria: "Alimentos" },
+    { nome: "Presunto (kg)", preco: "25,90", img: "presunto.webp", categoria: "Alimentos" },
+
+    // Limpeza e Higiene
+    { nome: "Amaciante", preco: "15,90", img: "amaciante.webp", categoria: "Produtos Variados" },
+    { nome: "Detergente", preco: "2,20", img: "detergente.jpg", categoria: "Produtos Variados" },
     { nome: "Lava Roupas", preco: "12,40", img: "lava_roupas.jpg", categoria: "Produtos Variados" },
-    { nome: "Óleo de Soja", preco: "7,30", img: "oleo.webp", categoria: "Alimentos" }
+    { nome: "Papel Higiênico (12rl)", preco: "18,90", img: "papel-higienico.jpg", categoria: "Produtos Variados" },
+    { nome: "Sabonete", preco: "3,50", img: "sabonete.jpg", categoria: "Produtos Variados" },
+
+    // Bebidas
+    { nome: "Cerveja Lata", preco: "4,50", img: "cerveja.webp", categoria: "Cervejas e Destilados" },
+    { nome: "Refrigerante 2L", preco: "9,90", img: "refri.webp", categoria: "Cervejas e Destilados" }
 ];
 
 let carrinho = [];
