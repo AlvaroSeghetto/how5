@@ -1,0 +1,290 @@
+:root {
+    --cor-vinho-escuro: #5a1212;
+    --cor-vinho-medio: #802020;
+    --cor-vinho-claro: #a04040;
+    --cor-fundo-rose: #fdf2f2;
+    --cor-texto-claro: #ffffff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--cor-fundo-rose);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--cor-vinho-medio);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo-placeholder {
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid gold;
+    overflow: hidden; 
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    margin: 20px auto 0;
+    background: var(--cor-vinho-claro);
+    border-radius: 4px;
+}
+
+.nav-btn {
+    flex: 1;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-right: 1px solid rgba(255,255,255,0.2);
+    transition: 0.3s;
+}
+
+.nav-btn:hover { background: var(--cor-vinho-escuro); }
+
+/* Grid de Categorias (Topo) */
+.hero-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+    padding: 30px 5%;
+}
+
+.cat-card {
+    background-color: var(--cor-vinho-claro);
+    color: white;
+    padding: 25px 10px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid var(--cor-vinho-escuro);
+    transition: transform 0.2s;
+}
+
+.cat-card:hover { transform: translateY(-5px); background: var(--cor-vinho-medio); }
+.cat-card .icon { font-size: 2.5rem; margin-bottom: 10px; }
+
+/* Layout da Loja (Sidebar + Vitrine) */
+.store-container {
+    display: flex;
+    padding: 0 5% 40px;
+    gap: 20px;
+}
+
+.sidebar { width: 220px; flex-shrink: 0; }
+
+.category-menu {
+    list-style: none;
+    padding: 0;
+    background: var(--cor-vinho-medio);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.category-menu li {
+    padding: 12px;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid var(--cor-vinho-claro);
+    cursor: pointer;
+}
+
+.category-menu li:hover { background: var(--cor-vinho-escuro); }
+.menu-title { background: var(--cor-vinho-escuro); font-weight: bold; }
+
+.product-area { flex-grow: 1; }
+
+.search-bar {
+    width: 100%;
+    padding: 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* Cartões de Produto */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    border: 2px solid var(--cor-vinho-claro);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product-card:hover { transform: scale(1.02); }
+
+.product-card img { 
+    width: 130px; 
+    height: 130px; 
+    object-fit: contain;
+    margin-bottom: 15px; 
+}
+
+.price-box {
+    background: var(--cor-vinho-medio);
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 6px;
+    margin: 12px 0;
+    font-size: 1.1rem;
+}
+
+.buy-link {
+    background: var(--cor-vinho-escuro);
+    color: white;
+    text-decoration: none;
+    font-size: 0.85rem;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+/* Seções Informativas */
+.whatsapp-promo-container {
+    padding: 20px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.whatsapp-card {
+    background-color: #a04040;
+    border-radius: 40px;
+    display: flex;
+    max-width: 1100px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.whatsapp-content {
+    flex: 1.5;
+    padding: 40px 60px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.whatsapp-btn {
+    background-color: #701010;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.whatsapp-image { flex: 1; display: flex; justify-content: flex-end; }
+.whatsapp-image img { height: 100%; width: 100%; object-fit: cover; }
+
+.quem-somos-container {
+    padding: 40px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.quem-somos-card {
+    background-color: #a04040;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    width: 100%;
+    padding: 40px;
+    gap: 30px;
+}
+
+.quem-somos-images { flex: 1; display: flex; flex-direction: column; gap: 15px; min-width: 300px; }
+.quem-somos-images img { border: 5px solid #000; border-radius: 30px; width: 100%; object-fit: cover; }
+
+.img-topo { z-index: 2; max-width: 90%; }
+.img-baixo { max-width: 70%; margin-top: -80px; margin-left: 30px; z-index: 3; }
+
+/* Rodapé */
+.footer-full {
+    background-color: #a04040;
+    color: #ffffff;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Interface do Carrinho */
+#cart-float-btn {
+    position: fixed; bottom: 20px; right: 20px;
+    background: var(--cor-vinho-escuro); color: white;
+    width: 60px; height: 60px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.5rem; cursor: pointer; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#cart-count {
+    position: absolute; top: 0; right: 0;
+    background: gold; color: black; font-size: 0.8rem;
+    padding: 2px 6px; border-radius: 50%; font-weight: bold;
+}
+
+.cart-modal {
+    position: fixed; top: 0; right: -100%; width: 350px; height: 100%;
+    background: white; z-index: 1001; transition: 0.4s; box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+    padding: 20px; display: flex; flex-direction: column;
+}
+
+.cart-modal.open { right: 0; }
+
+.cart-item {
+    display: flex; justify-content: space-between; align-items: center;
+    border-bottom: 1px solid #ddd; padding: 10px 0;
+}
+
+/* Ajustes de Responsividade */
+@media (max-width: 850px) {
+    .store-container, .whatsapp-card, .quem-somos-card { flex-direction: column; }
+    .sidebar { width: 100%; }
+    .whatsapp-image { height: 250px; }
+    .img-baixo { margin-top: -40px; }
+    .quem-somos-texto { text-align: center; }
+}
+
+@media (max-width: 600px) {
+    .footer-content { flex-direction: column; text-align: center; gap: 30px; }
+    .footer-right { text-align: center; }
+}
